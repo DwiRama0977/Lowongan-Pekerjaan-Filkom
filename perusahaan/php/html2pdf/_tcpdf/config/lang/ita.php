@@ -29,11 +29,11 @@
  * @license http://www.gnu.org/copyleft/lesser.html LGPL
  * @since 2004-03-03
  */
- 
+
 // ENGLISH
 
 global $l;
-$l = Array();
+$l = array();
 
 // PAGE META DESCRIPTORS --------------------------------------
 
@@ -47,4 +47,3 @@ $l['w_page'] = 'pagina';
 //============================================================+
 // END OF FILE                                                 
 //============================================================+
-?>

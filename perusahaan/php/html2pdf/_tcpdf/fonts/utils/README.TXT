@@ -127,4 +127,3 @@ Setting up a font for usage with TCPDF requires the following steps:
           * [basic-font-name-in-lowercase]b.php for bold variation
           * [basic-font-name-in-lowercase]i.php for oblique variation
           * [basic-font-name-in-lowercase]bi.php for bold oblique variation
-

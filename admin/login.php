@@ -1,11 +1,11 @@
 <?php
-	session_start();
-	if(isset($_SESSION['login_role'])){
-        if($_SESSION['login_role'] === "admin")
-		    echo "<script language=javascript>document.location.href='dashboard.php'</script>";
-        else if($_SESSION['login_role'] === "agen")
-		    echo "<script language=javascript>document.location.href='../index.php'</script>";
-	}
+session_start();
+if (isset($_SESSION['login_role'])) {
+    if ($_SESSION['login_role'] === "admin")
+        echo "<script language=javascript>document.location.href='dashboard.php'</script>";
+    else if ($_SESSION['login_role'] === "agen")
+        echo "<script language=javascript>document.location.href='../index.php'</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,10 +28,10 @@
         </div>
         <form class="form-signin" method="POST" action="php/login.php">
             <!--<img src="img/logo.png" width="90px" style="margin-bottom: 20px;"/>-->
-            <input class="form-control" type="text" name="username" placeholder="Username" required/>
-            <input class="form-control" type="password" name="password" placeholder="Password" required/>
+            <input class="form-control" type="text" name="username" placeholder="Username" required />
+            <input class="form-control" type="password" name="password" placeholder="Password" required />
             <input class="btn btn-primary" type="submit" value="Login" style="padding: 14px 20px; margin-top: 20px;"
-                required/>
+                required />
         </form>
     </div>
     <script src="../js/jquery.min.js"></script>

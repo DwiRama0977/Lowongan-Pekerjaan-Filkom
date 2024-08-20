@@ -109,7 +109,7 @@ if (isset($_SESSION['login_role'])) {
                                                 </h2>
                                                 <!-- <img src="../img/telkom.jpeg" style="margin-left: 500px;"> -->
                                             </div>
-                                            <div class="col-md-12"  style="margin-left: 4px; margin-top: 4px;">
+                                            <div class="col-md-12" style="margin-left: 4px; margin-top: 4px;">
                                                 <p class="category">
                                                     <?php echo $result['perusahaan_nama']; ?>
                                                     <br />
