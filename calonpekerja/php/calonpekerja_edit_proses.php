@@ -47,7 +47,7 @@
 				$strQuery = "UPDATE login SET login_username = '$username' WHERE login_id = $login_id";
 			}	
 			
-			$query = mysqli_query($connection, $strQuery);
+			// $query = mysqli_query($connection, $strQuery);
 			if($query){
 				$_SESSION['calon_pekerja_nama_lengkap'] = $nama;
 				echo "<script language=javascript>alert('Profil Berhasil Diupdate');</script>";

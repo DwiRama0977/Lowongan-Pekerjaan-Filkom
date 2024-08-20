@@ -16,7 +16,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
                     <div class="logo">
                         <!--<img src="../img/logo.png" width="60px" />-->
                         <a href="#" class="simple-text">
-                        Lowker Admin
+                        FILKOM JOB Admin
                     </a>
                     </div>
                     <ul class="nav">
@@ -45,13 +45,13 @@
                         <li>
                             <a href="calonpekerja.php">
                                 <i class="fa fa-user" style="font-size: 18px;"></i>
-                                <p>Calon Pekerja</p>
+                                <p>Mahasiswa</p>
                             </a>
                         </li>
                         <li class="active">
                             <a href="perusahaan.php">
                                 <i class="fa fa-industry" style="font-size: 18px;"></i>
-                                <p>Perusahaan</p>
+                                <p>Mitra</p>
                             </a>
                         </li>
                         <li>
@@ -91,7 +91,7 @@
                                 <span class="icon-bar bar2"></span>
                                 <span class="icon-bar bar3"></span>
                             </button>
-                            <a class="navbar-brand" href="#">Perusahaan</a>
+                            <a class="navbar-brand" href="#">Mitra</a>
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav navbar-right">
@@ -143,13 +143,13 @@
                                 <div class="col-md-6">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Data Perusahaan</h4>
+                                            <h4 class="title">Data Mitra</h4>
                                         </div>
                                         <div class="content">
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label>Nama Perusahaan</label>
+                                                        <label>Nama Mitra</label>
                                                         <input type="text" class="form-control border-input" name="nama" placeholder="Nama Perusahaan" />
                                                     </div>
                                                 </div>
@@ -204,7 +204,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cipta Dari <a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta</a>
+                            </script>, Hak Cipta Dari <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

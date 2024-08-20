@@ -19,7 +19,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -77,7 +77,7 @@
                                 <span class="icon-bar bar2"></span>
                                 <span class="icon-bar bar3"></span>
                             </button>
-                            <a class="navbar-brand" href="#" style="font-weight: 800;">LOWKER</a>
+                            <a class="navbar-brand" href="#" style="font-weight: 800;">FILKOM JOB</a>
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav navbar-left" style="margin-left: 56px;">
@@ -192,7 +192,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cipta Dari  <a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta </a>
+                            </script>, Hak Cipta Dari  <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

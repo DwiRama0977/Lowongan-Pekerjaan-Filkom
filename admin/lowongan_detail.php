@@ -19,7 +19,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -35,7 +35,7 @@
                     <div class="logo">
                         <!--<img src="../img/logo.png" width="60px" />-->
                         <a href="#" class="simple-text">
-                        Lowker Admin
+                        FILKOM JOB Admin
                     </a>
                     </div>
                     <ul class="nav">
@@ -48,13 +48,13 @@
                         <li>
                             <a href="calonpekerja.php">
                                 <i class="fa fa-user" style="font-size: 18px;"></i>
-                                <p>Calon Pekerja</p>
+                                <p>Mahasiswa</p>
                             </a>
                         </li>
                         <li>
                             <a href="perusahaan.php">
                                 <i class="fa fa-industry" style="font-size: 18px;"></i>
-                                <p>Perusahaan</p>
+                                <p>Mitra</p>
                             </a>
                         </li>
                         <li>
@@ -129,7 +129,7 @@
                                         <table class="table table-striped">
                                             <thead>
                                                 <th>ID</th>
-                                                <th>Perusahaan</th>
+                                                <th>Mitra</th>
                                                 <th>Judul</th>
                                                 <th>Kategori</th>
                                                 <th>Tanggal Buka</th>
@@ -393,7 +393,7 @@
                                     <div class="content table-responsive table-full-width">
                                         <table class="table">
                                             <thead>
-                                                <th>Calon Pekerja</th>
+                                                <th>Mahasiswa</th>
                                                 <th>Pendidikan Terakhir</th>
                                                 <th>Tempat Bekerja Terakhir</th>
                                                 <th>Status</th>
@@ -555,7 +555,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cita Dari  <a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta </a>
+                            </script>, Hak Cita Dari  <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

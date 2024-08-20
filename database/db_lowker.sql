@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2021 at 08:51 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Aug 20, 2024 at 03:25 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
   `admin_nama` varchar(51) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `admin_nama`) VALUES
+(41, 'admin');
 
 --
 -- Triggers `admin`
@@ -66,19 +73,19 @@ CREATE TABLE `calon_pekerja` (
   `calon_pekerja_tempat_bekerja_terakhir` varchar(51) DEFAULT NULL,
   `calon_pekerja_pekerjaan_bekerja_terakhir` varchar(51) DEFAULT NULL,
   `calon_pekerja_file_cv` varchar(101) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `calon_pekerja`
 --
 
 INSERT INTO `calon_pekerja` (`calon_pekerja_id`, `calon_pekerja_nama_lengkap`, `calon_pekerja_alamat`, `kota_id`, `calon_pekerja_jenis_kelamin`, `calon_pekerja_tempat_lahir`, `calon_pekerja_tanggal_lahir`, `calon_pekerja_status_pernikahan`, `calon_pekerja_email`, `calon_pekerja_telepon`, `calon_pekerja_pendidikan_terakhir`, `calon_pekerja_tempat_pendidikan_terakhir`, `calon_pekerja_tempat_bekerja_terakhir`, `calon_pekerja_pekerjaan_bekerja_terakhir`, `calon_pekerja_file_cv`) VALUES
-(30, 'Aldo', '', 1, 'L', '', '0000-00-00', 'Lajang', 'aldo', '', 'SD', '', '', '', ''),
-(33, 'BAGUS BUDI SATOTO', '', 1, 'L', '', '0000-00-00', 'Lajang', 'bagusbudi1308@gmail.com', '', 'SD', '', '', '', ''),
-(36, 'Aldo', '', 1, 'L', '', '0000-00-00', 'Lajang', 'aldo@z', '', 'SD', '', '', '', ''),
-(37, 'Contoh', '', 1, 'L', '', '0000-00-00', 'Lajang', 'contoh', '', 'SD', '', '', '', ''),
-(38, 'budi', '', 1, 'L', '', '0000-00-00', 'Lajang', 'budi123', '', 'SD', '', '', '', ''),
-(39, 'JokoWI', '', 1, 'L', '', '0000-00-00', 'Lajang', 'jokowi@gmail.com', '', 'SD', '', '', '', '');
+(30, 'Ryan Nabris Oktvian', '', 16, 'L', '', '0000-00-00', 'Lajang', 'ryan@gmail.com', '', 'SMA', '', '', '', ''),
+(33, 'Dwi Rama Prasetiya', '', 15, 'L', '', '0000-00-00', 'Lajang', 'dwirama0977@student.ub.ac.id', '9080909', 'SMA', '', '', '', ''),
+(36, 'Roy Sagita Putra', '', 17, 'L', '', '0000-00-00', 'Lajang', 'roy@gmail.com', '', 'SMA', '', '', '', ''),
+(37, 'Syahreza Fisti Ferdian', '', 14, 'L', '', '0000-00-00', 'Lajang', 'reza@gmail.com', '', 'SMA', '', '', '', ''),
+(38, 'Fiego Triwanda Putra', '', 8, 'L', '', '0000-00-00', 'Lajang', 'fiego@gmail.com', '', 'SD', '', '', '', ''),
+(39, 'Rivaro Farrelino', '', 11, 'L', '', '0000-00-00', 'Lajang', 'rivaro@gmail.com', '', 'SMA', '', '', '', '');
 
 --
 -- Triggers `calon_pekerja`
@@ -101,26 +108,26 @@ DELIMITER ;
 CREATE TABLE `kategori` (
   `kategori_id` int(11) NOT NULL,
   `kategori_nama` varchar(21) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `kategori`
 --
 
 INSERT INTO `kategori` (`kategori_id`, `kategori_nama`) VALUES
-(5, 'Administrasi'),
-(6, 'Asuransi'),
-(7, 'Hotel'),
-(8, 'Kecantikan'),
-(9, 'Kesehatan'),
-(10, 'Kontruksi Dan Banguna'),
-(1, 'Marketing'),
-(11, 'Pendidikan'),
-(12, 'Perbankan'),
-(2, 'Perminyakan'),
-(3, 'Pertambangan'),
-(4, 'Teknologi Informasi'),
-(13, 'Transportasi');
+(3, 'AI Specialist'),
+(2, 'Cloud Computing'),
+(8, 'Data Science'),
+(12, 'Database Admin'),
+(7, 'IT Support'),
+(11, 'Mobile Developer'),
+(1, 'Networking Specialist'),
+(13, 'Product Manager'),
+(10, 'Programmer'),
+(4, 'Security Analyst'),
+(6, 'Security System'),
+(5, 'UI/UX Designer'),
+(9, 'Web Developer');
 
 -- --------------------------------------------------------
 
@@ -131,7 +138,7 @@ INSERT INTO `kategori` (`kategori_id`, `kategori_nama`) VALUES
 CREATE TABLE `kota` (
   `kota_id` int(11) NOT NULL,
   `kota_nama` varchar(51) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `kota`
@@ -143,26 +150,27 @@ INSERT INTO `kota` (`kota_id`, `kota_nama`) VALUES
 (13, 'Bandung'),
 (22, 'Banjarmasin'),
 (12, 'Banten'),
-(7, 'Bengkulu'),
+(31, 'Banyuwangi'),
+(26, 'Bekasi'),
+(28, 'Bogor'),
+(9, 'Bojonegoro'),
 (17, 'Denpasar'),
 (11, 'DKI Jakarta'),
-(26, 'Golrongtalo'),
 (6, 'Jambi'),
 (34, 'Jayapura'),
+(33, 'Jojakarta'),
+(5, 'Kediri'),
 (30, 'Kendari'),
-(5, 'Kepulauan Riau'),
-(31, 'Kepulauan Tidore'),
 (19, 'Kupang'),
 (10, 'Lampung'),
+(18, 'Madura'),
 (29, 'Makasar'),
+(15, 'Malang'),
 (25, 'Manado'),
-(33, 'Manokwari'),
-(28, 'Manuju'),
-(18, 'Mataram'),
+(21, 'NTT'),
 (8, 'Palembang'),
 (27, 'Palu'),
-(9, 'Pangkal Pinang'),
-(21, 'Pangkal Raya'),
+(7, 'Pekalongan'),
 (20, 'Pontianak'),
 (4, 'Riau'),
 (23, 'Samarinda'),
@@ -170,8 +178,7 @@ INSERT INTO `kota` (`kota_id`, `kota_nama`) VALUES
 (3, 'Sumatra Barat'),
 (2, 'Sumatra Utara'),
 (16, 'Surabaya'),
-(24, 'Tanjung Kelor'),
-(15, 'Yogyakarta');
+(24, 'Tanjung Kelor');
 
 -- --------------------------------------------------------
 
@@ -184,7 +191,7 @@ CREATE TABLE `lamaran` (
   `lowongan_id` int(11) NOT NULL,
   `calon_pekerja_id` int(11) NOT NULL,
   `lamaran_status_lolos` enum('Menunggu','Lolos','Tidak Lolos') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `lamaran`
@@ -194,7 +201,9 @@ INSERT INTO `lamaran` (`lamaran_id`, `lowongan_id`, `calon_pekerja_id`, `lamaran
 (22, 19, 38, 'Menunggu'),
 (23, 20, 38, 'Menunggu'),
 (24, 25, 39, 'Menunggu'),
-(26, 22, 39, 'Menunggu');
+(26, 22, 39, 'Menunggu'),
+(27, 23, 33, 'Menunggu'),
+(28, 32, 33, 'Lolos');
 
 -- --------------------------------------------------------
 
@@ -207,23 +216,24 @@ CREATE TABLE `login` (
   `login_username` varchar(26) NOT NULL,
   `login_password` varchar(101) NOT NULL,
   `login_role` enum('Admin','Perusahaan','Calon Pekerja') NOT NULL DEFAULT 'Calon Pekerja'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `login`
 --
 
 INSERT INTO `login` (`login_id`, `login_username`, `login_password`, `login_role`) VALUES
-(30, 'aldo123', '9d1ec50ba9ceb580b76d015dbd49c17e', 'Calon Pekerja'),
-(31, 'amikom1', '5dff486265aba54f208746a70b90dd57', 'Perusahaan'),
-(32, 'kemendikbud', 'e8eb532791a8d8a1096e7c09f8f9c4a3', 'Perusahaan'),
-(33, 'bagus1', '7c457429df01c6b7eb2d921178f839f3', 'Calon Pekerja'),
-(34, 'surya1', '7b60abc0ee9578b7967511fbc15dd93f', 'Perusahaan'),
-(36, 'aldo12', 'a93adb944da930dc654d862da1739f56', 'Calon Pekerja'),
-(37, 'contoh1', '30097045d61b412e13350c9d37221329', 'Calon Pekerja'),
-(38, 'budi2', 'cc119701be06f8de7c4e87acfc504723', 'Calon Pekerja'),
-(39, 'jokowi', '7d00ff54a263fe80825b9297804a982c', 'Calon Pekerja'),
-(40, 'amikomjogja', 'afe8f002b9c5f8bc07d0080816887ec1', 'Perusahaan');
+(30, 'ryan', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(31, 'telkom', '202cb962ac59075b964b07152d234b70', 'Perusahaan'),
+(32, 'kemendikbud', '202cb962ac59075b964b07152d234b70', 'Perusahaan'),
+(33, 'dwi', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(34, 'shopee', '202cb962ac59075b964b07152d234b70', 'Perusahaan'),
+(36, 'roy', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(37, 'reza', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(38, 'fiego', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(39, 'rivaro', '202cb962ac59075b964b07152d234b70', 'Calon Pekerja'),
+(40, 'filkom', '202cb962ac59075b964b07152d234b70', 'Perusahaan'),
+(41, 'admin', '202cb962ac59075b964b07152d234b70', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -239,27 +249,27 @@ CREATE TABLE `lowongan` (
   `lowongan_deskripsi` text NOT NULL,
   `lowongan_tgl_buka` date NOT NULL,
   `lowongan_tgl_tutup` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `lowongan`
 --
 
 INSERT INTO `lowongan` (`lowongan_id`, `perusahaan_id`, `kategori_id`, `lowongan_judul`, `lowongan_deskripsi`, `lowongan_tgl_buka`, `lowongan_tgl_tutup`) VALUES
-(19, 31, 4, 'Programmmer', 'Join Sluur', '2021-09-22', '2021-09-26'),
-(20, 31, 4, 'Web Developer', '', '2021-09-22', '2021-09-26'),
-(21, 32, 11, 'Guru', '', '2021-09-22', '2021-09-24'),
-(22, 32, 11, 'Dosen', '', '2021-09-22', '2021-09-24'),
-(23, 34, 13, 'Supir', '', '2021-09-22', '2021-09-25'),
-(24, 34, 5, 'Admin Kantor', '', '2021-09-22', '2021-09-30'),
-(25, 34, 10, 'Mandor', '', '2021-09-22', '2021-09-25'),
-(26, 34, 12, 'Satpam', '', '2021-09-22', '2021-09-22'),
-(27, 34, 2, 'Peneliti', '', '2021-09-22', '2021-09-22'),
-(28, 34, 9, 'Dokter', '', '2021-09-22', '2021-09-22'),
-(29, 34, 8, 'Tata Rias', '', '2021-09-22', '2021-09-22'),
-(30, 34, 1, 'Chef', '', '2021-09-22', '2021-09-22'),
-(31, 34, 3, 'Pekerja Keras', '', '2021-09-22', '2021-09-22'),
-(32, 40, 11, 'Dosen Tetap', '', '2021-09-22', '2021-09-30');
+(19, 31, 10, 'Programmmer', 'Join Sluur', '2023-09-22', '2024-09-26'),
+(20, 31, 9, 'Web Developer', '', '2023-09-22', '2024-09-26'),
+(21, 32, 11, 'Mobile Developer', '', '2023-09-22', '2024-09-24'),
+(22, 32, 11, 'Mobile Developer', '', '2023-09-22', '2024-09-24'),
+(23, 34, 13, 'Product Manager', '', '2023-09-22', '2024-09-25'),
+(24, 34, 5, 'UI/UX Designer', '', '2023-09-22', '2024-09-30'),
+(25, 34, 4, 'Security Analyst', '', '2023-09-22', '2024-09-25'),
+(26, 34, 12, 'Database Admin', '', '2023-09-22', '2024-09-22'),
+(27, 34, 2, 'Cloud Computing', '', '2023-09-22', '2024-09-22'),
+(28, 34, 6, 'Security System', '', '2023-09-22', '2024-09-22'),
+(29, 34, 8, 'Data Science', '', '2023-09-22', '2024-09-22'),
+(30, 34, 1, 'Networking Specialist', '', '2023-09-22', '2024-09-22'),
+(31, 34, 3, 'AI Specialist', '', '2023-09-22', '2024-09-22'),
+(32, 40, 11, 'Mobile Developer', '', '2024-01-22', '2024-09-30');
 
 -- --------------------------------------------------------
 
@@ -271,7 +281,7 @@ CREATE TABLE `lowongan_jobdesc` (
   `lowongan_jobdesc_id` int(11) NOT NULL,
   `lowongan_id` int(11) NOT NULL,
   `lowongan_jobdesc_isi` varchar(101) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `lowongan_jobdesc`
@@ -290,7 +300,6 @@ INSERT INTO `lowongan_jobdesc` (`lowongan_jobdesc_id`, `lowongan_id`, `lowongan_
 (28, 28, ''),
 (29, 29, ''),
 (30, 30, ''),
-(31, 31, ''),
 (32, 32, 'Pendidikan');
 
 -- --------------------------------------------------------
@@ -303,14 +312,14 @@ CREATE TABLE `lowongan_syarat` (
   `lowongan_syarat_id` int(11) NOT NULL,
   `lowongan_id` int(11) NOT NULL,
   `lowongan_syarat` varchar(101) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `lowongan_syarat`
 --
 
 INSERT INTO `lowongan_syarat` (`lowongan_syarat_id`, `lowongan_id`, `lowongan_syarat`) VALUES
-(10, 19, 'Bebas'),
+(10, 19, 'SMA sederajat'),
 (11, 20, ''),
 (12, 21, 'S1 Pendidikan'),
 (13, 22, 'S2 Pendidikan'),
@@ -322,8 +331,7 @@ INSERT INTO `lowongan_syarat` (`lowongan_syarat_id`, `lowongan_id`, `lowongan_sy
 (19, 28, ''),
 (20, 29, ''),
 (21, 30, ''),
-(22, 31, ''),
-(23, 32, 'S2 Pendidikan');
+(23, 32, 'S1 Ilmu Komputer');
 
 -- --------------------------------------------------------
 
@@ -338,17 +346,17 @@ CREATE TABLE `perusahaan` (
   `kota_id` int(11) DEFAULT NULL,
   `perusahaan_email` varchar(51) NOT NULL,
   `perusahaan_telepon` varchar(13) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `perusahaan`
 --
 
 INSERT INTO `perusahaan` (`perusahaan_id`, `perusahaan_nama`, `perusahaan_alamat`, `kota_id`, `perusahaan_email`, `perusahaan_telepon`) VALUES
-(31, 'PT Amikom', 'Palu', 27, 'amikom@ac.id', '08997654565'),
-(32, 'Kemendikbud', 'Papua', 20, 'guru@id', '0987677777'),
-(34, 'PT Surya', '', 1, 'surya@yahoo,com', ''),
-(40, 'PT Amikom Jogja', 'Yogyakarta', 15, 'Amikom', '09876577');
+(31, 'PT Telkom Indonesia', 'Jogja', 11, 'Telkom@ac.id', '08997654565'),
+(32, 'Kemendikbud', 'Bandung', 13, 'guru@id', '0987677777'),
+(34, 'PT Shopee', 'Surabaya', 16, 'shopee@yahoo,com', ''),
+(40, 'FILKOM UB', 'Malang', 15, 'filkom.ub.ac.id', '09876577');
 
 --
 -- Triggers `perusahaan`
@@ -459,13 +467,13 @@ ALTER TABLE `kota`
 -- AUTO_INCREMENT for table `lamaran`
 --
 ALTER TABLE `lamaran`
-  MODIFY `lamaran_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `lamaran_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `lowongan`

@@ -44,7 +44,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -65,7 +65,7 @@
                                 <span class="icon-bar bar2"></span>
                                 <span class="icon-bar bar3"></span>
                             </button>
-                            <a class="navbar-brand" href="#" style="font-weight: 800;">LOWKER</a>
+                            <a class="navbar-brand" href="#" style="font-weight: 800;">FILKOM JOB</a>
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav navbar-left" style="margin-left: 56px;">
@@ -157,14 +157,14 @@
                                 <div class="col-md-6">
                                     <div class="card">
                                         <div class="header">
-                                            <h4 class="title">Data Perusahaan</h4>
+                                            <h4 class="title">Data Mitra</h4>
                                         </div>
                                         <div class="content">
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label>Nama Perusahaan</label>
-                                                        <input type="text" class="form-control border-input" name="nama" placeholder="Nama Perusahaan"  value="<?php echo $nama;?>"/>
+                                                        <label>Nama Mitra</label>
+                                                        <input type="text" class="form-control border-input" name="nama" placeholder="Nama Mitra"  value="<?php echo $nama;?>"/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -223,7 +223,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cipta Dari <a href="#">Suku Gumai 3 | Universitas Amikom Yogyakarta </a>
+                            </script>, Hak Cipta Dari <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

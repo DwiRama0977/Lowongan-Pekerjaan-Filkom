@@ -38,7 +38,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -54,7 +54,7 @@
                     <div class="logo">
                         <!--<img src="../img/logo.png" width="60px" />-->
                         <a href="#" class="simple-text">
-                        Lowker Admin
+                        FILKOM JOB Admin
                     </a>
                     </div>
                     <ul class="nav">
@@ -67,13 +67,13 @@
                         <li>
                             <a href="calonpekerja.php">
                                 <i class="fa fa-user" style="font-size: 18px;"></i>
-                                <p>Calon Pekerja</p>
+                                <p>Mahasiswa</p>
                             </a>
                         </li>
                         <li>
                             <a href="perusahaan.php">
                                 <i class="fa fa-industry" style="font-size: 18px;"></i>
-                                <p>Perusahaan</p>
+                                <p>Mitra</p>
                             </a>
                         </li>
                         <li>
@@ -149,7 +149,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label>Perusahaan</label>
+                                                        <label>Mitra</label>
                                                         <select class="form-control border-input" name="perusahaan_id">
                                                             <?php
                                                                 $strQuery = "SELECT perusahaan_id, perusahaan_nama FROM perusahaan";
@@ -224,7 +224,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cita Dari <a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta </a>
+                            </script>, Hak Cita Dari <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

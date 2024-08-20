@@ -16,7 +16,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
                     <div class="logo">
                         <!--<img src="../img/logo.png" width="60px" />-->
                         <a href="#" class="simple-text">
-                        Lowker Admin
+                        FILKOM JOB Admin
                     </a>
                     </div>
                     <ul class="nav">
@@ -45,13 +45,13 @@
                         <li>
                             <a href="calonpekerja.php">
                                 <i class="fa fa-user" style="font-size: 18px;"></i>
-                                <p>Calon Pekerja</p>
+                                <p>Mahasiswa</p>
                             </a>
                         </li>
                         <li>
                             <a href="perusahaan.php">
                                 <i class="fa fa-industry" style="font-size: 18px;"></i>
-                                <p>Perusahaan</p>
+                                <p>Mitra</p>
                             </a>
                         </li>
                         <li>
@@ -127,11 +127,11 @@
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                            <h4 class="modal-title" id="myModalLabel">Masukkan Judul Lowongan atau Nama Perusahaan</h4>
+                                                            <h4 class="modal-title" id="myModalLabel">Masukkan Judul Lowongan atau Nama Mitra</h4>
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="form-group">
-                                                                <label>Judul Lowongan atau Nama Perusahaan</label>
+                                                                <label>Judul Lowongan atau Nama Mitra</label>
                                                                 <input type="text" class="form-control border-input" name="nama" placeholder="Judul Lowongan atau Nama Perusahaan" />
                                                             </div>
                                                         </div>
@@ -158,7 +158,7 @@
                                         <table class="table table-striped">
                                             <thead>
                                                 <th>ID</th>
-                                                <th>Perusahaan</th>
+                                                <th>Mitra</th>
                                                 <th>Judul</th>
                                                 <th>Kategori</th>
                                                 <th>Tanggal Buka</th>
@@ -240,7 +240,7 @@
                             &copy;
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script>, Hak Cipta Dari  <a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta </a>
+                            </script>, Hak Cipta Dari  <a href="#">FILKOM UB</a>
                         </div>
                     </div>
                 </footer>

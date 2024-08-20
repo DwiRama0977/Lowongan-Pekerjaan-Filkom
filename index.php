@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Lowker</title>
+        <title>FILKOM JOB</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -28,7 +28,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="index.php" class="navbar-brand" style="color: #FFFFFF;">
-                        LOWKER
+                        FILKOM JOB
                     </a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
@@ -36,7 +36,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
                                 aria-expanded="false" style="color: #FFFFFF; border-radius: 10px;">
-                                Perusahaan
+                                Mitra
                             </a>
                             <ul class="dropdown-menu dropdown-info" aria-labelledby="dLabel">
                                 <li>
@@ -50,7 +50,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
                                 aria-expanded="false" style="color: #FFFFFF; background-color: #00B16A; border-radius: 10px;">
-                                Calon Pekerja
+                                Mahasiswa
                             </a>
                             <ul class="dropdown-menu dropdown-info" aria-labelledby="dLabel">
                                 <li>

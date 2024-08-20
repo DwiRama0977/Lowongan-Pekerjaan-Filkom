@@ -23,7 +23,7 @@
         <div class="login-text">
             <h3>Halaman Admin</h3>
             <p>
-                <font size="2">Silahkan masuk ke dalam akun admin anda</font>
+                <fontsize="2">Silahkan masuk ke dalam akun admin anda</fontsize>
             </p>
         </div>
         <form class="form-signin" method="POST" action="php/login.php">
