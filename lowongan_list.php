@@ -207,7 +207,7 @@ require "php/connection.php";
                         &copy;
                         <script>
                             document.write(new Date().getFullYear())
-                        </script>, Hak Cipta Dari<a href="#"> Suku Gumai 3 | Universitas Amikom Yogyakarta</a>
+                        </script>, Hak Cipta Dari<a href="#"> FILKOM UB</a>
                     </div>
                 </div>
             </footer>
